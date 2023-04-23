@@ -7,7 +7,7 @@ const generate=require('./generate')
 
 
 app.use(express.json())
-app.use(xss())
+// app.use(xss())
 app.use(cors({
     origin:"*",
 }))

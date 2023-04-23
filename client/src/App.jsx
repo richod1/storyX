@@ -22,7 +22,7 @@ export default function App() {
     });
 
     const data = await response.json();
-    return data.StoryQuery.trim();
+    return data.storyQuery.trim();
   };
 
   return (
@@ -39,8 +39,8 @@ export default function App() {
         />
         <input type="submit" value="Generate query" />
       </form>
-      <textarea rows="20" cols="100">{storyQuery}</textarea>
-      {/* <pre>{sqlQuery}</pre> */}
+      {/* <textarea rows="20" cols="100">{storyQuery}</textarea> */}
+      <pre>{storyQuery}</pre>
     </main>
   );
 }
